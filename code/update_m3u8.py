@@ -62,6 +62,8 @@ def fetch_and_extract_m3u8_from_redirect(url):
         m3u8_url = url_match.group(0) if url_match else None
 
         if m3u8_url:
+            # Clean up the URL if necessary (remove unwanted characters like '");')
+            m3u8_url = re.sub(r'[");\s]+$', '', m3u8_url)
             logging.info(f"Extracted m3u8 URL: {m3u8_url}")
             update_m3u8_file(m3u8_url)
         else:
@@ -77,6 +79,8 @@ def handle_no_redirection(content):
     m3u8_url = url_match.group(0) if url_match else None
 
     if m3u8_url:
+        # Clean up the URL if necessary
+        m3u8_url = re.sub(r'[");\s]+$', '', m3u8_url)
         logging.info(f"Extracted m3u8 URL: {m3u8_url}")
         update_m3u8_file(m3u8_url)
     else:
