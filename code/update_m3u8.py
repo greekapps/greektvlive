@@ -5,7 +5,7 @@ import requests
 url = "https://voe.sx/k4uygv3yxqsg"
 
 # Define the path to the m3u8 file in the repo
-m3u8_file_path = "path/to/your/m3u8_file.m3u8"
+m3u8_file_path = "files/ads/greektvlive.m3u8"
 
 def fetch_and_extract_m3u8():
     try:
