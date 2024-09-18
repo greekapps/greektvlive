@@ -1,8 +1,6 @@
 name: Update Alpha Cyprus Streaming Url
 
 on:
-  schedule:
-    - cron: '0 * * * *'  # This runs every hour; adjust as needed
   workflow_dispatch:  # Allows manual trigger from GitHub UI
 
 jobs:
