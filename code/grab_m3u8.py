@@ -18,7 +18,7 @@ def save_m3u8_file(m3u8_url, filename):
 
 if __name__ == "__main__":
     site_url = "https://www.alphacyprus.com.cy/live"  # Replace with the actual website URL
-    m3u8_file = "alphacyprus.m3u8"
+    m3u8_file = "channels/alphacyprus.m3u8"
 
     m3u8_url = get_m3u8_url(site_url)
     if m3u8_url:
