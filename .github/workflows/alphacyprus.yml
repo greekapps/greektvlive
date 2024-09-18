@@ -24,7 +24,7 @@ jobs:
     
     - name: Run script to grab m3u8 URL
       run: |
-        python grab_m3u8.py
+        python /code/grab_m3u8.py
 
     - name: Commit and push m3u8 file
       run: |
