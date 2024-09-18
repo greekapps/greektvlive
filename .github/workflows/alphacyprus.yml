@@ -30,7 +30,7 @@ jobs:
       run: |
         git config --global user.name "GitHub Action"
         git config --global user.email "action@github.com"
-        git add stream.m3u8
+        git add channels/alphacyprus.m3u8
         git commit -m "Updated m3u8 URL"
         git push
       env:
